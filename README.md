@@ -14,9 +14,10 @@ sudo mv harutmonitor /usr/local/bin/
 ```
 
 ## Windows dowload and installation
+```bash
 curl -LO https://raw.githubusercontent.com/BadalyanHarutyun/harutmonitor/main/binaries/windows/harutmonitor.exe
 move harutmonitor.exe C:\Windows\System32\
-
+```
 ## Usage
 
 After installing `harutmonitor`, you can use it like any other command-line tool.
