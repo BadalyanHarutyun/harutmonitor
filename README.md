@@ -1,29 +1,92 @@
+Got it ✅ — here’s a **ready-to-copy** `README.md` section with **step-by-step installation instructions** for both **Linux** and **Windows**, matching your simple Makefile:
+
+---
+
 # harutmonitor
+
 ## 📦 Installation
 
-### Option 1: Using `make` (recommended)
-Make sure you have `make` and `wget` installed. Then simply run:
-you can move you binary where you want /usr/local/bin/ or /usr/bin/ or similar place
+### 🐧 Linux Installation
+
+#### 1. Clone the repository
+
 ```bash
-make install
+git clone https://github.com/BadalyanHarutyun/harutmonitor.git
+cd harutmonitor
 ```
+
+#### 2. Build the binary
+
 ```bash
-wget -O harutmonitor https://raw.githubusercontent.com/BadalyanHarutyun/harutmonitor/main/binaries/linux/harutmonitor
-chmod +x harutmonitor
+make build
+```
+
+#### 3. Move the binary to a system path
+
+```bash
 sudo mv harutmonitor /usr/local/bin/
 ```
 
-## Windows dowload and installation
+#### 4. Verify installation
+
 ```bash
-curl -LO https://raw.githubusercontent.com/BadalyanHarutyun/harutmonitor/main/binaries/windows/harutmonitor.exe
+harutmonitor --help
+```
+
+---
+
+### 🪟 Windows Installation
+
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/BadalyanHarutyun/harutmonitor.git
+cd harutmonitor
+```
+
+#### 2. Build the binary
+
+```bash
+make build
+```
+
+#### 3. Move the executable to system path
+
+```bash
 move harutmonitor.exe C:\Windows\System32\
 ```
-## Usage
+
+#### 4. Verify installation
+
+```bash
+harutmonitor.exe --help
+```
+
+---
+
+## ⚙️ Makefile Commands
+
+| Command      | Description                                     |
+| ------------ | ----------------------------------------------- |
+| `make build` | Build the Go binary (`harutmonitor`)            |
+| `make run`   | Run the application directly (`go run main.go`) |
+| `make clean` | Remove the compiled binary                      |
+| `make tidy`  | Format code and tidy dependencies               |
+
+---
+
+## 🚀 Usage
 
 After installing `harutmonitor`, you can use it like any other command-line tool.
 
 ### Example
 
 ```bash
-harutmonitor sleep 5 && echo Harut
-harutmonitor --monitor-log=mylogs.log sleep 5 && echo Harut
+harutmonitor sleep 5 && echo Hello
+```
+
+Or with a log file:
+
+```bash
+harutmonitor --monitor-log=mylogs.log sleep 5 && echo Hello
+```
