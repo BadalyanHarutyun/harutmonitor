@@ -1,7 +1,3 @@
-Got it ✅ — here’s a **ready-to-copy** `README.md` section with **step-by-step installation instructions** for both **Linux** and **Windows**, matching your simple Makefile:
-
----
-
 # harutmonitor
 
 ## 📦 Installation
